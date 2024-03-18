@@ -13,6 +13,7 @@
         <option value="tambah">+</option>
         <option value="kurang">-</option>
         <option value="kali">*</option>
+        <option value="bagi">/</option>
 
     </select>
     <input type="text" id="angka2" placeholder="Masukkan Angka Kedua">
@@ -36,6 +37,10 @@
                 case 'kali':
                     hasil = angka1 * angka2;
                     break;
+                case 'bagi':
+                    hasil = angka1 / angka2;
+                    break;
+
             }
             document.getElementById('hasil').innerText = hasil;
         }
